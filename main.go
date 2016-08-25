@@ -1,15 +1,17 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+
+	"github.com/brydavis/fin"
+)
 
 func main() {
-	p := 1000.0
-	r := 0.12
-	t := 100
-	v := Compound(p, r, t)
+	p := 1000.0 // principle
+	r := 0.05   // interest rate
+	y := 35     // years
+	v := fin.Compound(p, r, y)
 
-	// fmt.Printf("%f\n", Round(v, 3))
-	// fmt.Println(v)
-	fmt.Printf("%f\n", v)
+	fmt.Printf("original principle: $%0.2f\tbalance @ %d years: $%0.2f\n", p, y, v) // 5516.015368
 
 }
