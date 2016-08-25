@@ -21,9 +21,5 @@ func main() {
 	v := fin.Compound(p, r, y)
 
 	fmt.Printf("original principle: $%0.2f\tbalance @ %d years: $%0.2f\n", p, y, v) // 5516.015368
-
 }
-
-
-
 ```
