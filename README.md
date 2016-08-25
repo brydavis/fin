@@ -3,7 +3,7 @@
 Finance for Go.
 
 ---
-### Interest Rates
+#### Simple and Compound Interest
 
 ```go 
 
